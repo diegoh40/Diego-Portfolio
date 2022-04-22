@@ -1,0 +1,125 @@
+
+.mobile-header {
+  position: absolute;
+  width: 375px;
+  height: 92px;
+  left: 0.1px;
+  top: 0.1px;
+  background: #3c3a39;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 48px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 375px;
+  height: 590px;
+  left: 0;
+  top: 92px;
+  color: #ff6b00;
+  background: #1c1a19;
+  padding: 120px 24px;
+}
+
+p {
+  position: static;
+  flex: 1;
+  width: 77px;
+  height: 24px;
+  left: 12px;
+  top: 10px;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+img {
+  padding-bottom: 0;
+  order: 5;
+  align-self: flex-end;
+}
+
+h1 {
+  position: static;
+  width: 327px;
+  height: 124px;
+  left: 24px;
+  top: 120px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  margin: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+h3 {
+  position: static;
+  width: 327px;
+  height: 27px;
+  left: 24px;
+  top: 256px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+h4 {
+  position: static;
+  width: 327px;
+  height: 123px;
+  left: 24px;
+  top: 295px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 24px;
+  border-radius: 8px;
+}
+
+a {
+  order: 4;
+}
