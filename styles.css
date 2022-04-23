@@ -31,16 +31,43 @@
   color: #ff6b00;
   padding: 120px 24px;
   background-color: #1c1a19;
-  background-image: url('images/img1.png');
+  background-image: url('images2/img1.png');
   background-repeat: no-repeat;
   background-position: 100% 100%;
+}
+
+.blacktitle {
+  color: black;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #ff6b00;
+  padding: 120px 24px;
+  background-color: #1c1a19;
+  background-image: url('images2/img1.png');
+  background-repeat: no-repeat;
+  background-position: 100% 25%;
+}
+
+.bg-page {
+  background-color: white;
+  background-image: url('Placeholder2.png');
+  background-repeat: no-repeat;
+  background-position: 40% 100%;
+  margin: 24px;
+  padding-top: 20px;
 }
 
 h1 {
   font-family: 'Crete Round', serif;
   font-style: normal;
+  color: #ff6b00;
   font-weight: 400;
   font-size: 56px;
+  margin: 24px;
 }
 
 h2 {
@@ -55,18 +82,18 @@ h2 {
 h3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  padding-bottom: 20px;
+  padding-top: 40px;
   font-size: 25px;
-  color: #091e42;
+  color: white;
+  margin: 24px;
+}
+
+.bktitle h3 {
+  color: black;
 }
 
 .my-works1 {
   margin: 24px;
-}
-
-.img1 {
-  display: flex;
-  justify-content: center;
 }
 
 .subtitle {
@@ -77,13 +104,14 @@ h3 {
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
+  margin: 24px;
 }
 
 .social {
@@ -91,19 +119,14 @@ p {
   list-style-type: none;
 }
 
-.my-works {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  background-image: url('images/placeholder2.png');
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  height: 386px;
-  padding-top: 20px;
-  margin: 24px;
+.lenguages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 10vh;
+  padding: 10px 10px;
 }
 
-.lenguajes li {
+.lenguages li {
   margin: 10px 10px 10px 0;
   border: 0.5px solid #8993a4;
   box-sizing: border-box;
@@ -113,41 +136,35 @@ p {
   list-style-type: none;
 }
 
-.lenguajes {
-  display: flex;
-  min-height: 10vh;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 10px;
-}
-
 .my-works1 ul {
   margin: 0;
-  padding: 0;
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
   list-style-type: none;
+  padding: 10px 10px;
 }
 
 button {
-  align-self: center;
+  justify-content: center;
   background: #ff6b00;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #fff;
   height: 48px;
-  width: 327px;
+  width: 100%;
   border: none;
 }
 
 button:hover {
+  border: 1px solid #f55800;
   background-color: #fff5e1;
   color: #ff5800;
 }
 
 button:active {
-  background-color: #e05304;
+  background: #e05304;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
 }
 
 button:disabled {
@@ -158,7 +175,7 @@ button:disabled {
   color: #091e42;
 }
 
-.centrar {
+.about-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,10 +184,10 @@ button:disabled {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
-  padding-bottom: 5;
+  padding-bottom: 0.1%;
 }
 
-.centrar ul li {
+.about-me ul li {
   display: list-item;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -184,29 +201,30 @@ button:disabled {
   padding: 0;
 }
 
-.centrar ul {
+.about-me ul {
   padding: 0;
 }
 
 .titles2 ul {
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   line-height: 44px;
   color: #fff;
   list-style-type: none;
 }
 
-.about a {
-  align-self: center;
-  background: #ff6b00;
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  height: 48px;
-  width: 327px;
-  border: none;
-  padding: 12px;
-  text-decoration: none;
+.about-me h4 {
+  font-size: 32px;
 }
 
-.centrar h4 {
-  font-size: 32px;
+.botton-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 50%;
+  margin-right: 37%;
+}
+
+.lenguages-sp {
+  padding-top: 20%;
 }
