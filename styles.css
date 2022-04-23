@@ -195,7 +195,7 @@ button:disabled {
   list-style-type: none;
 }
 
-.about scan {
+.about a {
   align-self: center;
   background: #ff6b00;
   font-family: 'Roboto', sans-serif;
@@ -204,6 +204,7 @@ button:disabled {
   width: 327px;
   border: none;
   padding: 12px;
+  text-decoration: none;
 }
 
 .centrar h4 {
