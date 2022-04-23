@@ -1,0 +1,58 @@
+
+.mobile-header {
+  background-color: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 48px;
+}
+
+.mobile-header a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #ff6b00;
+  padding: 120px 24px;
+  background-color: #1c1a19;
+  background-image: url('./img1.png');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+h1 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: #fff5e1;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  list-style-type: none;
+}
