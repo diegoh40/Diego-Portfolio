@@ -13,7 +13,6 @@
 
 ## Authors
 
-
 👤 **Diego Hernández**
 
 - GitHub: [@diehoh40](https://github.com/diegoh40)
