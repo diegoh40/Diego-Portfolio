@@ -163,7 +163,7 @@ button:disabled {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px ;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
@@ -187,6 +187,7 @@ button:disabled {
 .centrar ul {
   padding: 0;
 }
+
 .titles2 ul {
   font-weight: 700;
   line-height: 44px;
