@@ -195,7 +195,7 @@ button:disabled {
   list-style-type: none;
 }
 
-.about a {
+.about scan {
   align-self: center;
   background: #ff6b00;
   font-family: 'Roboto', sans-serif;
