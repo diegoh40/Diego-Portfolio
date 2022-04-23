@@ -2,17 +2,18 @@
 
 # DIEGO PORTAFOLIO
 
-> This project will test my knowledge in UI design supported by the Figma platform, this challenge is where I will start working my first steps of my portfolio in principle for a mobile environment.
+>in this second part of this project I have managed to understand several CSS grid concepts, I have strengthened through Flexbox practice, and in general I think I have strengthened my HTML and CSS skills. 
+
 
 
 ## Built With
 
 - HTML and CSS
+- CSS Grid
 - Flexbox
 
 
 ## Authors
-
 
 👤 **Diego Hernández**
 
