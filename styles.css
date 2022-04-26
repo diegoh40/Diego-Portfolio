@@ -122,7 +122,7 @@ p {
 .lenguages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  min-height: 10vh;
+  min-height: 5vh;
   padding: 10px 10px;
 }
 
@@ -155,7 +155,7 @@ button {
   border: none;
 }
 
-button:hover {
+button:hover , .icon:hover {
   border: 1px solid #f55800;
   background-color: #fff5e1;
   color: #ff5800;
@@ -228,3 +228,46 @@ button:disabled {
 .lenguages-sp {
   padding-top: 20%;
 }
+
+form , .name , .email , .text-area, .social {
+
+  width: 100%;
+  padding: 12px 0;
+  margin: 16px 0;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;  
+  justify-items: center;
+}
+h6 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  /* or 138% */
+  
+  text-align: center;
+  
+  /* Neutrals/N800 */
+  
+  color: #172B4D;
+}
+.text-area {
+  background: #FBF8F7;
+
+
+}
+/* input {
+  list-style-type: none;
+} */
+.form button, hr, .social { 
+
+  width: 50%;
+  margin-left: 25%;
+ 
+
+} 
