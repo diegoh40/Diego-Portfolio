@@ -2,8 +2,7 @@
 
 # DIEGO PORTAFOLIO
 
->in this second part of this project I have managed to understand several CSS grid concepts, I have strengthened through Flexbox practice, and in general I think I have strengthened my HTML and CSS skills. 
-
+>In this part of the challenge we worked with my partner implementing the design part of the form, we implemented tags as a form, we used flexbox.
 
 
 ## Built With
