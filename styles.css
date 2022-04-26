@@ -88,7 +88,7 @@ h3 {
   margin: 24px;
 }
 
-.bktitle h3 {
+.bk-title h3 {
   color: black;
 }
 
@@ -100,7 +100,7 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
-  padding-bottom: 5px;
+  padding-button: 5px;
 }
 
 p {
@@ -110,7 +110,7 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  padding-bottom: 2px;
+  padding-button: 2px;
   margin: 24px;
 }
 
@@ -119,14 +119,14 @@ p {
   list-style-type: none;
 }
 
-.lenguages {
+.languages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   min-height: 5vh;
   padding: 10px 10px;
 }
 
-.lenguages li {
+.languages li {
   margin: 10px 10px 10px 0;
   border: 0.5px solid #8993a4;
   box-sizing: border-box;
@@ -155,7 +155,8 @@ button {
   border: none;
 }
 
-button:hover , .icon:hover {
+button:hover,
+.icon:hover {
   border: 1px solid #f55800;
   background-color: #fff5e1;
   color: #ff5800;
@@ -184,7 +185,7 @@ button:disabled {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
-  padding-bottom: 0.1%;
+  padding-button: 0.1%;
 }
 
 .about-me ul li {
@@ -217,7 +218,7 @@ button:disabled {
   font-size: 32px;
 }
 
-.botton-about {
+.button-about {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -225,49 +226,52 @@ button:disabled {
   margin-right: 37%;
 }
 
-.lenguages-sp {
+.languages-sp {
   padding-top: 20%;
 }
+.about-me img{
+  margin: 0 12px;
+}
 
-form , .name , .email , .text-area, .social {
-
+form,
+.name,
+.email,
+.text-area,
+.social {
   width: 100%;
   padding: 12px 0;
   margin: 16px 0;
-  
 }
 
 form {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   justify-items: center;
 }
 h6 {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 32px;
   line-height: 44px;
-  /* or 138% */
-  
   text-align: center;
-  
-  /* Neutrals/N800 */
-  
-  color: #172B4D;
+  color: #172b4d;
+  margin: 24px auto;
 }
 .text-area {
-  background: #FBF8F7;
-
-
+  background: #fbf8f7;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
 }
-/* input {
-  list-style-type: none;
-} */
-.form button, hr, .social { 
-
+input {
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+}
+.form button,
+hr,
+.social {
   width: 50%;
   margin-left: 25%;
- 
-
-} 
+}
