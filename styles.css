@@ -88,7 +88,7 @@ h3 {
   margin: 24px;
 }
 
-.bktitle h3 {
+.bk-title h3 {
   color: black;
 }
 
@@ -100,7 +100,7 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
-  padding-bottom: 5px;
+  padding-button: 5px;
 }
 
 p {
@@ -110,7 +110,7 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  padding-bottom: 2px;
+  padding-button: 2px;
   margin: 24px;
 }
 
@@ -119,14 +119,14 @@ p {
   list-style-type: none;
 }
 
-.lenguages {
+.languages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   min-height: 5vh;
   padding: 10px 10px;
 }
 
-.lenguages li {
+.languages li {
   margin: 10px 10px 10px 0;
   border: 0.5px solid #8993a4;
   box-sizing: border-box;
@@ -185,7 +185,7 @@ button:disabled {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
-  padding-bottom: 0.1%;
+  padding-button: 0.1%;
 }
 
 .about-me ul li {
@@ -218,7 +218,7 @@ button:disabled {
   font-size: 32px;
 }
 
-.botton-about {
+.button-about {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -226,8 +226,11 @@ button:disabled {
   margin-right: 37%;
 }
 
-.lenguages-sp {
+.languages-sp {
   padding-top: 20%;
+}
+.about-me img{
+  margin: 0 12px;
 }
 
 form,
@@ -249,9 +252,10 @@ form {
 h6 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 32px;
   line-height: 44px;
+<<<<<<< HEAD
 
   /* or 138% */
 
@@ -260,15 +264,32 @@ h6 {
   /* Neutrals/N800 */
 
   color: #172b4d;
+=======
+  text-align: center;
+  color: #172b4d;
+  margin: 24px auto;
+>>>>>>> be66ee2582856c90cc973bc1249d6e15c50bdaff
 }
 
 .text-area {
   background: #fbf8f7;
+<<<<<<< HEAD
 }
 
 /* input {
   list-style-type: none;
 } */
+=======
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+}
+input {
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+}
+>>>>>>> be66ee2582856c90cc973bc1249d6e15c50bdaff
 .form button,
 hr,
 .social {
