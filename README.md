@@ -2,15 +2,29 @@
 
 # DIEGO PORTAFOLIO
 
->in this second part of this project I have managed to understand several CSS grid concepts, I have strengthened through Flexbox practice, and in general I think I have strengthened my HTML and CSS skills. 
+>In this part of the challenge we worked with my partner implementing the design part of the form, we implemented tags as a form, we used flexbox.
 
+# Getting Started
 
+the repo should be cloned in this way we can work on the modifications, we make the necessary corrections achieving best practices 
 
-## Built With
+first we make a local copy 
 
-- HTML and CSS
-- CSS Grid
-- Flexbox
+steps and tools:
+
+template #2 Figma
+Git 
+GitHub
+HTML
+CSS
+linters
+Working with the programming partner
+Live testing
+Github flow
+Installation 
+Use
+test execution
+Deployment
 
 
 ## Authors
@@ -23,6 +37,11 @@
 
 
 ## 🤝 Contributing
+
+👤**Alfred Boateng**
+- GitHub: [@learnwithalfred](https://github.com/learnwithalfred)
+
+
 
 Contributions, issues, and feature requests are welcome!
 

@@ -88,7 +88,7 @@ h3 {
   margin: 24px;
 }
 
-.bktitle h3 {
+.bk-title h3 {
   color: black;
 }
 
@@ -100,7 +100,6 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
-  padding-bottom: 5px;
 }
 
 p {
@@ -110,7 +109,6 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  padding-bottom: 2px;
   margin: 24px;
 }
 
@@ -119,14 +117,20 @@ p {
   list-style-type: none;
 }
 
-.lenguages {
+.social2 {
+  display: flex;
+  list-style-type: none;
+  margin-left: 12%;
+}
+
+.languages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  min-height: 10vh;
+  min-height: 5vh;
   padding: 10px 10px;
 }
 
-.lenguages li {
+.languages li {
   margin: 10px 10px 10px 0;
   border: 0.5px solid #8993a4;
   box-sizing: border-box;
@@ -155,7 +159,8 @@ button {
   border: none;
 }
 
-button:hover {
+button:hover,
+.icon:hover {
   border: 1px solid #f55800;
   background-color: #fff5e1;
   color: #ff5800;
@@ -184,7 +189,6 @@ button:disabled {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
-  padding-bottom: 0.1%;
 }
 
 .about-me ul li {
@@ -217,7 +221,7 @@ button:disabled {
   font-size: 32px;
 }
 
-.botton-about {
+.button-about {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -225,6 +229,65 @@ button:disabled {
   margin-right: 37%;
 }
 
-.lenguages-sp {
+.languages-sp {
   padding-top: 20%;
+}
+
+.about-me img {
+  margin: 0 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 0 24px;
+}
+
+form .name,
+.email,
+.text-area {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+  padding: 12px 0;
+  border: 0;
+}
+
+h6 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 25px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  margin: 2px;
+}
+
+.text-area {
+  background: #fbf8f7;
+  outline: none;
+  margin-bottom: 24px;
+}
+
+.button-form button {
+  width: 50%;
+  margin-left: 25%;
+}
+
+hr {
+  width: 50%;
+  height: 5%;
+  outline: none;
+  background: black;
+}
+
+form hr {
+  width: 100%;
+  height: 0.1px;
+  background: #dbd8d7;
 }
