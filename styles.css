@@ -117,6 +117,12 @@ p {
   list-style-type: none;
 }
 
+.social2 {
+  display: flex;
+  list-style-type: none;
+  margin-left: 12%;
+}
+
 .languages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -231,42 +237,57 @@ button:disabled {
   margin: 0 12px;
 }
 
-form,
-.name,
-.email,
-.text-area,
-.social {
-  width: 100%;
-  padding: 12px 0;
-  margin: 16px 0;
-  border: 0;
-}
-
 form {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  outline: none;
+  margin: 0 24px;
+}
+
+form .name,
+.email,
+.text-area {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+  padding: 12px 0;
+  border: 0;
 }
 
 h6 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700px;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  margin: 2px;
 }
 
 .text-area {
   background: #fbf8f7;
   outline: none;
+  margin-bottom: 24px;
 }
 
-.form button,
-hr,
-.social {
+.button-form button {
   width: 50%;
   margin-left: 25%;
+}
+
+hr {
+  width: 50%;
+  height: 5%;
+  outline: none;
+  background: black;
+}
+
+form hr {
+  width: 100%;
+  height: 0.1px;
+  background: #dbd8d7;
 }

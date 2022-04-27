@@ -4,12 +4,27 @@
 
 >In this part of the challenge we worked with my partner implementing the design part of the form, we implemented tags as a form, we used flexbox.
 
+# Getting Started
 
-## Built With
+the repo should be cloned in this way we can work on the modifications, we make the necessary corrections achieving best practices 
 
-- HTML and CSS
-- CSS Grid
-- Flexbox
+first we make a local copy 
+
+steps and tools:
+
+template #2 Figma
+Git 
+GitHub
+HTML
+CSS
+linters
+Working with the programming partner
+Live testing
+Github flow
+Installation 
+Use
+test execution
+Deployment
 
 
 ## Authors
@@ -25,6 +40,7 @@
 
 👤**Alfred Boateng**
 - GitHub: [@learnwithalfred](https://github.com/learnwithalfred)
+
 
 
 Contributions, issues, and feature requests are welcome!
