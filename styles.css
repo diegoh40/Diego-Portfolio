@@ -31,7 +31,7 @@
   .button_works {
     display: flex;
     justify-content: right;
-    width: 50%;
+    width: 100%;
   }
 
   .button-form {
@@ -124,10 +124,23 @@
     padding: 0% 5% 0% 5%;
   }
 
+  .blacktitle {
+    grid-area: 2 / 1 / 8 / 2;
+  }
+
   .works-img {
     background-color: white;
     width: 90%;
     grid-area: 2 / 1 / 8 / 2;
+  }
+
+  .line1 {
+    display: flex;
+    flex-wrap: nowrap;
+
+    /* flex-wrap: wrap; */
+
+    grid-area: 1 / 1 / 2 / 3;
   }
 
   .works-img img {
@@ -142,7 +155,7 @@
 
   .about-me-header {
     text-align: left;
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -483,7 +496,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  margin: 0 24px;
+
+  /* margin: 0 24px; */
 }
 
 form .name,
@@ -530,10 +544,10 @@ form hr {
 }
 
 .line1 hr {
-  margin-top: 40px;
-  height: 1px;
+  margin-top: 70px;
+  height: 0.5px;
   border: 0;
   color: #666;
   background-color: black;
-  width: 70%;
+  width: 60%;
 }
