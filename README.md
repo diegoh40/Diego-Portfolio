@@ -2,7 +2,11 @@
 
 # DIEGO PORTAFOLIO
 
->In this part of the challenge we worked with my partner implementing the design part of the form, we implemented tags as a form, we used flexbox.
+>This is my portfolio project where I have implemented the knowledge in HTML and CSS, it has been developed to work responsively for both mobile and desktop environments, it has also been deployed on the web as part of the development exercise.
+
+## Live Demo 
+
+[Portfolio online version](https://diegoh40.github.io/Diego-Portfolio/)
 
 # Getting Started
 

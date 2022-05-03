@@ -12,7 +12,7 @@
   display: none;
 }
 
-.menu-deployed .icon {
+.menu-deployed .icon1 {
   display: block;
 }
 
@@ -366,6 +366,15 @@ h3 {
   color: #fff5e1;
 }
 
+.subtitle2:hover {
+  transform: translate(50px, 0);
+}
+
+.rotation:hover {
+  transform: rotate(45deg);
+  transform-origin: 20% 40%;
+}
+
 p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -425,16 +434,28 @@ button {
   height: 48px;
   width: 100%;
   border: none;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
 }
 
-button:hover,
-.icon:hover {
+button:hover {
   border: 1px solid #f55800;
   background-color: #fff5e1;
   color: #ff5800;
+
+  /* transform: scale(0.1); /* Equal to scaleX(0.7) scaleY(0.7) */
+}
+
+.icon- {
+  transition: all 1s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.5);
 }
 
 button:active {
+  box-shadow: 0 8px 16px rgba(71, 49, 43, 0.48);
   background: #e05304;
   font-family: 'Inter', sans-serif;
   color: #fff;
@@ -551,3 +572,9 @@ form hr {
   background-color: black;
   width: 60%;
 }
+
+/* .transition {
+  transition: all 0.5s ease-out;
+ cursor: pointer;
+}
+ */
