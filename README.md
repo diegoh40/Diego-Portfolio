@@ -6,7 +6,7 @@
 
 ## Live Demo 
 
-[Portfolio live demo](https://diegoh40.github.io/Diego-Portfolio/)
+[Portfolio online version](https://diegoh40.github.io/Diego-Portfolio/)
 
 # Getting Started
 
