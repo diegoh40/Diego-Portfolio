@@ -75,13 +75,10 @@
     padding: 24px;
   }
 
-  .menu-deployed .icon {
+  .menu-deployed .icon1 {
     display: none;
   }
 
-  .menu {
-    display: block;
-  }
 
   .img-dissapear {
     visibility: hidden;
@@ -232,12 +229,16 @@
     list-style-type: none;
     padding-bottom: 2.5ex;
   }
+ 
 }
 
 @media (max-width: 768px) {
   .works-group-outside {
     display: none;
   }
+ /* .icon1 {
+    display: none;
+  } */
 
   .about-me-header {
     display: flex;
@@ -446,10 +447,10 @@ button:hover {
   /* transform: scale(0.1); /* Equal to scaleX(0.7) scaleY(0.7) */
 }
 
-.icon- {
+/* .icon {
   transition: all 1s ease-in-out;
 }
-
+ */
 .icon:hover {
   transform: scale(1.5);
 }
