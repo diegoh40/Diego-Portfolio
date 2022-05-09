@@ -79,7 +79,6 @@
     display: none;
   }
 
-
   .img-dissapear {
     visibility: hidden;
   }
@@ -229,14 +228,14 @@
     list-style-type: none;
     padding-bottom: 2.5ex;
   }
- 
 }
 
 @media (max-width: 768px) {
   .works-group-outside {
     display: none;
   }
- /* .icon1 {
+
+  /* .icon1 {
     display: none;
   } */
 
