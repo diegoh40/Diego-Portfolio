@@ -443,8 +443,6 @@ button:hover {
   border: 1px solid #f55800;
   background-color: #fff5e1;
   color: #ff5800;
-
-  /* transform: scale(0.1); /* Equal to scaleX(0.7) scaleY(0.7) */
 }
 
 /* .icon {
@@ -509,8 +507,6 @@ button:disabled {
   flex-direction: row;
   justify-content: flex-start;
   width: 50%;
-
-  /*  margin-right: 90%; */
   padding-left: 20px;
 }
 
@@ -573,9 +569,3 @@ form hr {
   background-color: black;
   width: 60%;
 }
-
-/* .transition {
-  transition: all 0.5s ease-out;
- cursor: pointer;
-}
- */
