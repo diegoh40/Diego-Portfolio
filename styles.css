@@ -297,7 +297,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     height: auto;
     width: 90%;
-    padding: 0% 6% 0% 6%;
+    padding: 0% 3% 0% 6%;
   }
 
   .wrap-languages {
@@ -317,10 +317,6 @@
   .works-group-outside {
     display: none;
   }
-
-  /* .icon1 {
-    display: none;
-  } */
 
   .about-me-header {
     display: flex;
