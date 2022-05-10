@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@700&family=Poppins:wght@700&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
     <script src="js/scripts.js"></script>
     
     
@@ -101,7 +105,10 @@
         </ul>      
                          
           <label class="button_works ">
-            <button type="submit">See Project</button>
+         
+           <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            See Project
+          </button>
           </label>        
       
     </div>
@@ -122,7 +129,10 @@
           <li>ruby</li>
         </ul>
 
-        <button  type="submit">See Project</button>
+     
+       <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        See Project
+      </button>
       </div>
     
 
@@ -139,7 +149,10 @@
           <li>ruby</li>
         </ul>
 
-        <button class="without-button" type="submit">See Project</button>
+
+       <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        See Project
+      </button>
       </div>
 
       <div class="bg-page">
@@ -156,7 +169,10 @@
           <li>ruby</li>
         </ul>
 
-        <button class="without-button" type="submit">See Project</button>
+   
+        <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          See Project
+        </button>
       </div>
     </div>
 
@@ -178,7 +194,11 @@
       </div>
 
       <form class="button_works">
-        <button type="submit">See Project</button>
+     
+
+       <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        See Project
+      </button>
     </form>
       </div>
     
@@ -196,7 +216,10 @@
           <li>ruby</li>
         </ul>
 
-        <button class="without-button" type="submit">See Project</button>
+ 
+      <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        See Project
+      </button>
       </div>
 
       <div class="bg-page-three">
@@ -212,7 +235,10 @@
           <li>ruby</li>
         </ul>
 
-        <button class="without-button" type="submit">See Project</button>
+     
+       <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        See Project
+      </button>
       </div>
       <div class="bg-page-two">
         <h3>Professional Art Printing Data</h3>
@@ -227,7 +253,11 @@
           <li>ruby</li>
         </ul>
 
-        <button class="without-button" type="submit">See Project</button>
+       
+
+        <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          See Project
+        </button>
       </div>
 
       <div class="bg-page-three">
@@ -243,8 +273,13 @@
           <li>ruby</li>
         </ul>
 
-        <button class="without-button" type="submit">See Project</button>
+       
+
+       <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        See Project
+      </button>
       </div>
+
       <div class="bg-page-three">
         <h3>Professional Art Printing Data</h3>
         <p>
@@ -258,10 +293,16 @@
           <li>ruby</li>
         </ul>
 
-        <button class="without-button" type="submit">See Project</button>
+       <!--  <button class="without-button" typ -->e="submit">See Project</button>
+
+        <button type="button" class="without-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          See Project
+        </button>
       </div>
       
     </div>
+
+    
       
 
       <section id="about" class="about">
@@ -406,7 +447,29 @@
           </ul>
         </div>
 
-     
+
+  
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Multi Post Stories</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="pop-img">
+        <img  src="images2/snshoot.png" alt="pop-up image" />
+</div>  
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+        
+      </div>
+      <div class="row">
+        <button type="button" class="col" data-bs-dismiss="modal">See Live<img class="icon" src="images2/flecha.png" alt="GitHub Social" /></button>
+        <button type="button" class="col">See Source<img class="icon" src="images2/github.png" alt="GitHub Social" /></button>
+      </div>
+    </div>
+  </div>
+</div>
           
 
           

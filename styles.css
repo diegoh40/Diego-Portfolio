@@ -12,6 +12,8 @@
   display: none;
 }
 
+
+
 .menu-deployed .icon1 {
   display: block;
 }
@@ -63,6 +65,13 @@
   line-height: 44px;
   color: #fff;
   list-style-type: none;
+}
+
+.pop-img {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  vertical-align: middle;
 }
 
 #mobile_menu {
@@ -213,6 +222,7 @@
     width: 90%;
     grid-area: 2 / 1 / 8 / 2;
   }
+ 
 
   .line1 {
     display: flex;
@@ -229,9 +239,9 @@
     padding: 20px;
   }
 
-  .without-button {
+ /*  .without-button {
     display: none;
-  }
+  } */
 
   .about-me-header {
     text-align: left;
