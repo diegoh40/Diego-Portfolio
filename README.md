@@ -10,7 +10,8 @@
 
 # Getting Started
 
-The repoSITORY should be cloned in this way we can work in the local computer.
+The repository should be cloned in this way we can work in the local computer.
+git clone https://github.com/diegoh40/Diego-Portfolio.git
 
 Steps and tools:
 
