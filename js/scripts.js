@@ -1,15 +1,15 @@
 const works = [
   {
     project: 'The Beatles',
-    description: "The Beatles were an English rock band, formed in Liverpool in 1960, that comprised John Lennon, Paul McCartney, George Harrison and Ringo Starr.",
+    description: 'The Beatles were an English rock band, formed in Liverpool in 1960, that comprised John Lennon, Paul McCartney, George Harrison and Ringo Starr.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP'],
     image: 'beatles.jpg',
     link: 'http://www.',
     source: 'https://github.com/diegoh40',
-  },  
+  },
   {
     project: 'The Rolling Stones',
-    description: "The Rolling Stones are a British rock group, formed in 1962, that drew on Chicago blues stylings to create a unique vision of the dark side of post-1960s counterculture.",
+    description: 'The Rolling Stones are a British rock group, formed in 1962, that drew on Chicago blues stylings to create a unique vision of the dark side of post-1960s counterculture.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP'],
     image: 'beatles.jpg',
     link: 'http://www.',
@@ -17,7 +17,7 @@ const works = [
   },
   {
     project: 'Pink Floyd',
-    description: 'Pink Floyd is famous for being an English rock band first formed in London in 1965. They first gained recognition for their psychedelic rock sound which was distinguished by the bands extended compositions, experimental techniques and philosophical lyrics.',
+    description: 'Pink Floyd is famous for being an English rock band first formed in London in 1965.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     image: 'beatles.jpg',
     link: 'http://www.',
@@ -40,7 +40,7 @@ const works = [
     source: 'https://github.com/diegoh40',
   },
   {
-    project: 'Liceo Nuevo Horizonte',
+    project: 'U2',
     description: 'U2, Irish postpunk band that by the end of the 1980s had established itself not only as one of the most popular music bands.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     image: 'beatles.jpg',
@@ -74,12 +74,10 @@ function menuOpen(opc = false) {
 const loadProjects = () => {
   let showProjects = '';
 
-  for(let i=1 ; i < works.length; i++) {
-    //console.log(item.project);
-
+  for (let i = 1; i < works.length; i += 1) {
     let listTech = '';
 
-    works[i].languages.forEach((elem) => { listTech += `<li>${elem}</li>`; });    
+    works[i].languages.forEach((elem) => { listTech += `<li>${elem}</li>`; });
 
     showProjects += `<div class="col-12 col-md-4 mb-3">
       <article>
@@ -99,7 +97,7 @@ const loadProjects = () => {
 
     document.getElementById('projectList').innerHTML = showProjects;
   }
-}
+};
 /*
 function openModal(id) {
   console.log(id);
@@ -108,12 +106,11 @@ function openModal(id) {
 }
 */
 
-var exampleModal = document.getElementById('popupModal');
+const exampleModal = document.getElementById('popupModal');
 
-exampleModal.addEventListener('show.bs.modal', function (event) {
-
-  var button = event.relatedTarget
-  var idnum = button.getAttribute('data-bs-whatever')
+exampleModal.addEventListener('show.bs.modal', (event) => {
+  const button = event.relatedTarget;
+  const idnum = button.getAttribute('data-bs-whatever');
 
   /*
   // Button that triggered the modal
@@ -124,28 +121,26 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   // and then do the updating in a callback.
   //
   // Update the modal's content.
-  
+
   var modalBodyInput = exampleModal.querySelector('.modal-body input')
 
   modalTitle.textContent = 'New message to ' + recipient
   modalBodyInput.value = recipient
   */
 
-  let buttons = /* '<div class="d-grid gap-2"><button type="button" class="me-2">See Live</button><button type="button">See Source</button></div>'; */
-  '<div class="btn"><div class="row"><button type="button" class="col me-2">See Live <img class="icon" src="images2/flecha.png" alt="GitHub Social" /></button><button class="col me-2" type="button">See Source<img class="icon" src="images2/github.png" alt="GitHub Social" /></button></div></div>';
+  const buttons = '<div class="btn"><div class="row"><button type="button" class="col me-2">See Live <img class="icon" src="images2/flecha.png" alt="GitHub Social" /></button><button class="col me-2" type="button">See Source<img class="icon" src="images2/github.png" alt="GitHub Social" /></button></div></div>';
   let listTech = '';
 
-  works[idnum].languages.forEach((elem) => { listTech += `<li>${elem}</li>`; });    
+  works[idnum].languages.forEach((elem) => { listTech += `<li>${elem}</li>`; });
 
-  var modalTitle = exampleModal.querySelector('.modal-title');
-  
+  const modalTitle = exampleModal.querySelector('.modal-title');
+
   modalTitle.innerHTML = works[idnum].project;
- 
+
   document.getElementById('popup_image').src = `./images2/bandas/${works[idnum].image}`;
   document.getElementById('popup_description').innerHTML = works[idnum].description + buttons;
   document.getElementById('popup_tech').innerHTML = listTech;
-})
-
+});
 
 menuOpen();
 menuClose();
