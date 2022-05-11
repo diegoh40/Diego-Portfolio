@@ -11,8 +11,82 @@
   list-style-type: none;
   display: none;
 }
+#popup_description .btn  {
+  display:grid;
+  align-items: flex-end;
+  /* position:relative; */
+  height: 100%;
+  width: 100%;
+
+}
 
 
+#popup_image {
+  background-size: cover;
+width: 100%;
+
+
+}
+
+#popup_tech {
+  list-style-type: none;  
+}
+/*
+#popup_tech li {
+  list-style-type: none;  
+}
+*/
+article {
+  background: tomato url(./images2/placeholder0.png) no-repeat;
+  background-size: cover;
+  border: 1px solid  black;
+  height: 380px;
+  margin: 0;
+  padding: 0;  
+  width: 100%;
+}
+
+article:hover .article-info {
+  display: none;
+}
+
+article:hover .article-button {
+  display: block;
+}
+
+article .article-info {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0) 100%);  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  height: 100%;
+  padding: 12px;
+  width: 100%;
+}
+
+article .article-button {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+article .article-button button {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.article-info h4 {
+  font-family: 'Crete Round', serif;
+  font-size: 36px;
+  color: white;
+}
+
+article .article-button {
+  display: none;
+}
 
 .menu-deployed .icon1 {
   display: block;
@@ -55,8 +129,9 @@
   box-sizing: border-box;
   padding: 12px 10px;
   font-family: 'Roboto', sans-serif;
-  background-color: #dbdfe6;
+  background-color: rgba(255, 255, 255, 0.24);
   list-style-type: none;
+  text-align: center;
 }
 
 .titles2 ul {
@@ -205,13 +280,15 @@
     list-style-type: none;
   }
 
-  .my-works1 {
+  /* .my-works1 {
+    
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     align-content: center;
     padding: 0% 5% 0% 5%;
-  }
+   
+  } */
 
   .blacktitle {
     grid-area: 2 / 1 / 8 / 2;
@@ -239,9 +316,13 @@
     padding: 20px;
   }
 
- /*  .without-button {
-    display: none;
-  } */
+   .without-button {
+    /*display: none;*/
+    /*position: absolute;
+    bottom: 0;
+    */
+    width: auto;
+  }
 
   .about-me-header {
     text-align: left;
@@ -399,6 +480,7 @@
   background-position: 40% 100%;
   margin: 24px;
   padding-top: 20px;
+  position: relative;
 }
 
 h1 {
@@ -427,11 +509,25 @@ h3 {
   color: white;
   margin: 24px;
 }
-
+/*
 .bk-title h3 {
   font-size: 35px;
   color: black;
 }
+*/
+
+#portfolio h3 {
+  font-size: 35px;
+  margin: 0 0 20px 0;
+  color: black;
+}
+
+#portfolio p {
+  font-size: 18px;
+  margin: 0 0 0 0;  
+  color: black;
+}
+
 
 .my-works1 {
   margin: 24px;
@@ -482,24 +578,25 @@ p {
   grid-template-columns: repeat(4, 1fr);
   min-height: 5vh;
   padding: 10px 10px;
+  margin-right: 70%;
 }
 
 button {
-  justify-content: center;
   background: #ff6b00;
+  border: 1px solid #f55800;
   font-family: 'Inter', sans-serif;
   color: #fff;
-  height: 48px;
   width: 100%;
   border: none;
+  padding: 8px;
   transition: all 0.5s ease-in;
-  cursor: pointer;
 }
 
 button:hover {
   border: 1px solid #f55800;
   background-color: #fff5e1;
   color: #ff5800;
+  cursor: pointer;
 }
 
 /* .icon {
@@ -511,7 +608,7 @@ button:hover {
 }
 
 button:active {
-  box-shadow: 0 8px 16px rgba(71, 49, 43, 0.48);
+  /*box-shadow: 0 8px 16px rgba(71, 49, 43, 0.48);*/
   background: #e05304;
   font-family: 'Inter', sans-serif;
   color: #fff;
