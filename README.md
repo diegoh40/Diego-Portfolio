@@ -10,25 +10,15 @@
 
 # Getting Started
 
-the repo should be cloned in this way we can work on the modifications, we make the necessary corrections achieving best practices 
+The repoSITORY should be cloned in this way we can work in the local computer.
 
-first we make a local copy 
+Steps and tools:
 
-steps and tools:
-
-template #2 Figma
-Git 
-GitHub
-HTML
-CSS
-linters
-Working with the programming partner
-Live testing
-Github flow
-Installation 
-Use
-test execution
-Deployment
+### Prerequisites
+### Install
+### Usage
+### Run test linters - HTML, CSS , JS.
+### Deployment
 
 
 ## Authors
@@ -44,6 +34,7 @@ Deployment
 
 👤**Alfred Boateng**
 - GitHub: [@learnwithalfred](https://github.com/learnwithalfred)
+- GitHub: [@learnwithgonzalo](https://github.com/mgmediaweb)
 
 
 
