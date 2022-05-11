@@ -146,7 +146,6 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   document.getElementById('popup_tech').innerHTML = listTech;
 })
 
-
 menuOpen();
 menuClose();
 loadProjects();
