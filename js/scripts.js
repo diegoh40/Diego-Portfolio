@@ -150,18 +150,13 @@ form.addEventListener('submit', (event) => {
 
   const emailVal = email.value.trim();
 
-
   if (email.value === '') {
-    alert.innerHTML = 'Field is empty.'
-
+    alert.innerHTML = 'Field is empty.';
   } else if (!emailRegex.test(emailVal)) {
-
-    alert.innerHTML = ' Use only lowercase in email field.'
-
+    alert.innerHTML = ' Use only lowercase in email field.';
   } else {
-    return form.submit();
+    form.submit();
   }
-
 });
 
 menuOpen();// menu header
