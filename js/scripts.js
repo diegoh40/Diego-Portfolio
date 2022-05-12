@@ -1,3 +1,4 @@
+// Mobil-menu//
 function menuClose(opc) {
   if (opc) {
     const mmenu = document.querySelector('#mobile_menu');
@@ -137,24 +138,30 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
   document.getElementById('popup_tech').innerHTML = listTech;
 });
 
-// form-validation//
+/* // form-validation// */
 
-const form = document.querySelector('#contactForm');
-const email = document.querySelector('#email');
+const form = document.getElementById('contactForm');
+const email = document.getElementById('email');
+const alert = document.getElementById('alertWin');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegex = /[a-z]+[@].[a-z]+.[a-z]{2,3}/;
 
   const emailVal = email.value.trim();
 
-  if (!emailRegex.test(emailVal)) {
-    document.getElementById('alertWin').style.display = 'block';
 
-    email.focus();
+  if (email.value === '') {
+    alert.innerHTML = 'Field is empty.'
+
+  } else if (!emailRegex.test(emailVal)) {
+
+    alert.innerHTML = ' Use only lowercase in email field.'
+
   } else {
-    form.submit();
+    return form.submit();
   }
+
 });
 
 menuOpen();// menu header
