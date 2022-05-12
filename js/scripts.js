@@ -159,36 +159,28 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-
 // Storage Data//
-
 
 const getInfo = () => {
   const storeInfo = JSON.parse(localStorage.getItem('storeInfo'));
 
   if (storeInfo) {
-    document.getElementById('name').value = formData.name;  
-    document.getElementById('email').value = formData.email;
-    document.getElementById('message').value = formData.message;
+    document.getElementById('name').value = storeInfo.name;
+    document.getElementById('email').value = storeInfo.email;
+    document.getElementById('message').value = storeInfo.message;
   }
 };
 
-
-
 form.addEventListener('keyup', () => {
   const storeInfo = {
-    first_name: document.getElementById('name').value,  
+    first_name: document.getElementById('name').value,
     email: document.getElementById('email').value,
     message: document.getElementById('message').value,
   };
   localStorage.setItem('storeInfo', JSON.stringify(storeInfo));
 }, true);
 
-
-
 menuOpen();// menu header
 menuClose();// menu header
 loadProjects(); // Works
-getInfo();//storage
-
-
+getInfo();// storage
