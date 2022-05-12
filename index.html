@@ -162,10 +162,11 @@
         </div>
       </section>
 
-        <form id="contact" class="form-row" action="https://formspree.io/f/mpzbodwe" method="post">
+        <form id="contactForm" class="form-row" action="https://formspree.io/f/mpzbodwe" method="post">
             <h6 class="text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h6>
             <div class="second-part-form">
                 <input
+                id="name"
                   class="name"
                   type="text"
                   name="full name"
@@ -175,26 +176,32 @@
                 />
                 <hr />
                 <input
+                id="email" 
                   class="email"
                   type="email"
-                  name="email"
+                  name="email"                  
+                  autocomplete="off"
                   placeholder="Email Address"
-                  required
+                 
                 />
                 <hr />
                 <textarea
                   class="text-area"
                   name="message"
-                  id="message"
-                  rows="6"
+                  id="message"                      rows="6"                   
                   placeholder="Enter text here"
                   required
                   maxlength="500"
                 ></textarea>
+                
+                <div id="alertWin" class="alert">              
+                 
+              </div> 
                 <div class="button-form">
-                <button type="submit" value="Get in touch">Get in touch</button>
+                <button type="submit" value="submit">Get in touch</button>
                 </div>
             </div>
+                            
         </form>
 
         <ul class="social2">
@@ -247,7 +254,7 @@
               </div>
             </div>
           </div>
-        </div>    
-            
+        </div>
+                 
   </body>
 </html>

@@ -1,3 +1,20 @@
+// Mobil-menu//
+function menuClose(opc) {
+  if (opc) {
+    const mmenu = document.querySelector('#mobile_menu');
+    mmenu.style.display = 'none';
+  }
+}
+
+function menuOpen(opc = false) {
+  if (opc) {
+    const mmenu = document.querySelector('#mobile_menu');
+    mmenu.style.display = 'block';
+  }
+}
+
+// popup-window //
+
 const works = [
   {
     project: 'The Beatles',
@@ -57,20 +74,6 @@ const works = [
   },
 ];
 
-function menuClose(opc) {
-  if (opc) {
-    const mmenu = document.querySelector('#mobile_menu');
-    mmenu.style.display = 'none';
-  }
-}
-
-function menuOpen(opc = false) {
-  if (opc) {
-    const mmenu = document.querySelector('#mobile_menu');
-    mmenu.style.display = 'block';
-  }
-}
-
 const loadProjects = () => {
   let showProjects = '';
 
@@ -98,13 +101,6 @@ const loadProjects = () => {
     document.getElementById('projectList').innerHTML = showProjects;
   }
 };
-/*
-function openModal(id) {
-  console.log(id);
-  //$('#popupModal').modal('show');
-  popupModal.show()
-}
-*/
 
 const exampleModal = document.getElementById('popupModal');
 
@@ -142,6 +138,27 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
   document.getElementById('popup_tech').innerHTML = listTech;
 });
 
-menuOpen();
-menuClose();
-loadProjects();
+/* // form-validation// */
+
+const form = document.getElementById('contactForm');
+const email = document.getElementById('email');
+const alert = document.getElementById('alertWin');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailRegex = /[a-z]+[@].[a-z]+.[a-z]{2,3}/;
+
+  const emailVal = email.value.trim();
+
+  if (email.value === '') {
+    alert.innerHTML = 'Field is empty.';
+  } else if (!emailRegex.test(emailVal)) {
+    alert.innerHTML = ' Use only lowercase in email field.';
+  } else {
+    form.submit();
+  }
+});
+
+menuOpen();// menu header
+menuClose();// menu header
+loadProjects(); // works
