@@ -1,3 +1,19 @@
+function menuClose(opc) {
+  if (opc) {
+    const mmenu = document.querySelector('#mobile_menu');
+    mmenu.style.display = 'none';
+  }
+}
+
+function menuOpen(opc = false) {
+  if (opc) {
+    const mmenu = document.querySelector('#mobile_menu');
+    mmenu.style.display = 'block';
+  }
+}
+
+// popup-window //
+
 const works = [
   {
     project: 'The Beatles',
@@ -57,20 +73,6 @@ const works = [
   },
 ];
 
-function menuClose(opc) {
-  if (opc) {
-    const mmenu = document.querySelector('#mobile_menu');
-    mmenu.style.display = 'none';
-  }
-}
-
-function menuOpen(opc = false) {
-  if (opc) {
-    const mmenu = document.querySelector('#mobile_menu');
-    mmenu.style.display = 'block';
-  }
-}
-
 const loadProjects = () => {
   let showProjects = '';
 
@@ -98,13 +100,6 @@ const loadProjects = () => {
     document.getElementById('projectList').innerHTML = showProjects;
   }
 };
-/*
-function openModal(id) {
-  console.log(id);
-  //$('#popupModal').modal('show');
-  popupModal.show()
-}
-*/
 
 const exampleModal = document.getElementById('popupModal');
 
@@ -142,6 +137,26 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
   document.getElementById('popup_tech').innerHTML = listTech;
 });
 
-menuOpen();
-menuClose();
-loadProjects();
+// form-validation//
+
+const form = document.querySelector('#contactForm');
+const email = document.querySelector('#email');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  const emailVal = email.value.trim();
+
+  if (!emailRegex.test(emailVal)) {
+    document.getElementById('alertWin').style.display = 'block';
+
+    email.focus();
+  } else {
+    form.submit();
+  }
+});
+
+menuOpen();// menu header
+menuClose();// menu header
+loadProjects(); // works

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Grape+Nuts&family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Grape+Nuts&family=Inter&family=Roboto:wght@500&display=swap");
 
+#soyI {
+  color: #172b4d;
+}
+
 button {
   background: #ff6b00;
   border: 1px solid #f55800;
@@ -20,6 +24,10 @@ button:active {
 
 button:disabled {
   background-color: #f4f1f0;
+}
+
+.alert {
+  color: red;
 }
 
 .menu-deployed li {
@@ -671,6 +679,7 @@ form .name,
   width: 100%;
   padding: 12px 0;
   border: 0;
+  padding-left: 5%;
 }
 
 form h6 {
@@ -694,7 +703,8 @@ form h6 {
 form hr {
   width: 95%;
   height: 0.1px;
-  background: black;
+  background: grey;
+  padding-left: 100px;
 }
 
 .modal-title {
