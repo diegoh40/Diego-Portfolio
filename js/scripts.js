@@ -21,7 +21,7 @@ const works = [
     description: 'The Beatles were an English rock band, formed in Liverpool in 1960, that comprised John Lennon, Paul McCartney, George Harrison and Ringo Starr.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP'],
     image: 'beatles.jpg',
-    link: 'http://www.',
+    link: 'http://www.beatles.com',
     source: 'https://github.com/diegoh40',
   },
   {
@@ -29,7 +29,7 @@ const works = [
     description: 'The Rolling Stones are a British rock group, formed in 1962, that drew on Chicago blues stylings to create a unique vision of the dark side of post-1960s counterculture.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP'],
     image: 'beatles.jpg',
-    link: 'http://www.',
+    link: 'http://www.therollingstones.com',
     source: 'https://github.com/diegoh40',
   },
   {
@@ -37,7 +37,7 @@ const works = [
     description: 'Pink Floyd is famous for being an English rock band first formed in London in 1965.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     image: 'beatles.jpg',
-    link: 'http://www.',
+    link: 'http://www.pinkfloyd.com',
     source: 'https://github.com/diegoh40',
   },
   {
@@ -45,7 +45,7 @@ const works = [
     description: 'Led Zeppelin were an English rock band formed in London in 1968. The group consisted of vocalist Robert Plant, guitarist Jimmy Page.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     image: 'beatles.jpg',
-    link: 'http://www.',
+    link: 'http://www.ledzeppelin.com',
     source: 'https://github.com/diegoh40',
   },
   {
@@ -53,7 +53,7 @@ const works = [
     description: 'The Who are an English rock band formed in London in 1964. Their classic lineup consisted of lead singer Roger Daltrey, guitarist and singer Pete Townshend.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     image: 'beatles.jpg',
-    link: 'http://www.',
+    link: 'http://www.thewho.com',
     source: 'https://github.com/diegoh40',
   },
   {
@@ -61,7 +61,7 @@ const works = [
     description: 'U2, Irish postpunk band that by the end of the 1980s had established itself not only as one of the most popular music bands.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     image: 'beatles.jpg',
-    link: 'http://www.',
+    link: 'http://www.u2.com',
     source: 'https://github.com/diegoh40',
   },
   {
@@ -69,7 +69,7 @@ const works = [
     description: 'The Doors, American band that, with a string of hits in the late 1960s and early 70s, was the creative vehicle for singer Jim Morrison.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery'],
     image: 'beatles.jpg',
-    link: 'http://www.hosterialafama.cl/',
+    link: 'http://www.thedoors.com/',
     source: 'https://github.com/diegoh40',
   },
 ];
