@@ -152,10 +152,11 @@ form.addEventListener('submit', (event) => {
 
   if (email.value === '') {
     alert.innerHTML = 'Field is empty.';
-  } else if (!emailRegex.test(emailVal)) {
+  } else if (emailRegex.test(emailVal)) {  
     alert.innerHTML = ' Use only lowercase in email field.';
   } else {
     form.submit();
+    
   }
 });
 
