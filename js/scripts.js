@@ -21,8 +21,8 @@ const works = [
     description: 'The Beatles were an English rock band, formed in Liverpool in 1960, that comprised John Lennon, Paul McCartney, George Harrison and Ringo Starr.',
     languages: ['HTML', 'CSS', 'JS', 'Bootstrap'],
     image: 'beatles.jpg',
-    link: 'http://www.beatles.com',
-    source: 'https://github.com/diegoh40',
+    link: 'https://diegoh40.github.io/Capstone-Avengers_conference/',
+    source: 'https://github.com/diegoh40/Capstone-Avengers_conference',
   },
   {
     project: 'CREATING HIGH-PERFORMANCE TEAMS CONFERENCE BOGOTÁ 2022',
