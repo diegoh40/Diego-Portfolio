@@ -19,16 +19,16 @@ const works = [
   {
     project: 'The Beatles',
     description: 'The Beatles were an English rock band, formed in Liverpool in 1960, that comprised John Lennon, Paul McCartney, George Harrison and Ringo Starr.',
-    languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP'],
+    languages: ['HTML', 'CSS', 'JS', 'Bootstrap'],
     image: 'beatles.jpg',
     link: 'http://www.beatles.com',
     source: 'https://github.com/diegoh40',
   },
   {
-    project: 'The Rolling Stones',
-    description: 'The Rolling Stones are a British rock group, formed in 1962, that drew on Chicago blues stylings to create a unique vision of the dark side of post-1960s counterculture.',
+    project: 'CREATING HIGH-PERFORMANCE TEAMS CONFERENCE BOGOTÁ 2022',
+    description: 'In this capstone a page of a conference is presented, using creativity we include our own ideas for the conference to customize the project, we implemented all the concepts seen in the module, HTML, CSS, DOM, JS Objects.',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP'],
-    image: 'beatles.jpg',
+    image: 'proj1.png',
     link: 'http://www.therollingstones.com',
     source: 'https://github.com/diegoh40',
   },
@@ -124,7 +124,12 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
   modalBodyInput.value = recipient
   */
 
-  const buttons = '<div class="btn"><div class="row"><button type="button" class="col me-2">See Live <img class="icon" src="images2/flecha.png" alt="GitHub Social" /></button><button class="col me-2" type="button">See Source<img class="icon" src="images2/github.png" alt="GitHub Social" /></button></div></div>';
+  const buttons = `<div class="btn">
+  <div class="row">
+  <button type="button" class="col me-2">See Live <img class="icon" src="images2/flecha.png" alt="GitHub Social" />
+  </button><button class="col me-2" type="button">See Source<img class="icon" src="images2/github.png" alt="GitHub Social" />
+  </button></div>
+  </div>`;
   let listTech = '';
 
   works[idnum].languages.forEach((elem) => { listTech += `<li>${elem}</li>`; });
@@ -133,7 +138,7 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
 
   modalTitle.innerHTML = works[idnum].project;
 
-  document.getElementById('popup_image').src = `./images2/bandas/${works[idnum].image}`;
+  document.getElementById('popup_image').src = `./images2/${works[idnum].image}`;
   document.getElementById('popup_description').innerHTML = works[idnum].description + buttons;
   document.getElementById('popup_tech').innerHTML = listTech;
 });
