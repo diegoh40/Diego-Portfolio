@@ -16,80 +16,70 @@ function menuOpen(opc = false) {
 // popup-window //
 
 const works = [
+ 
   {
-    project: 'The Beatles',
-    description: 'The Beatles were an English rock band, formed in Liverpool in 1960, that comprised John Lennon, Paul McCartney, George Harrison and Ringo Starr.',
-    languages: ['HTML', 'CSS', 'JS', 'Bootstrap'],
-    image: 'beatles.jpg',
+    project: 'Conference Avengers page  Bogotá 2022',
+    description: 'In this capstone a page of a conference is presented, using creativity we include our own ideas for the conference to customize the project, we implemented all the concepts seen in the module, HTML, CSS, DOM, JS Objects.',
+    languages: ['HTML', 'CSS', 'Bootstrap', 'JS'],
+    image: 'proj1.png',
     link: 'https://diegoh40.github.io/Capstone-Avengers_conference/',
     source: 'https://github.com/diegoh40/Capstone-Avengers_conference',
   },
   {
-    project: 'CREATING HIGH-PERFORMANCE TEAMS CONFERENCE BOGOTÁ 2022',
-    description: 'In this capstone a page of a conference is presented, using creativity we include our own ideas for the conference to customize the project, we implemented all the concepts seen in the module, HTML, CSS, DOM, JS Objects.',
-    languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP'],
-    image: 'proj1.png',
-    link: 'http://www.therollingstones.com',
-    source: 'https://github.com/diegoh40',
+    project: 'X-Travel',
+    description: 'This is a workgroup that manages the real live data from the SpaceX API. We built a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    languages: ['HTML', 'CSS', 'React', 'Redux'],
+    image: 'proj2.png',
+    link: 'https://x-trav.netlify.app/',
+    source: 'https://github.com/Mov305/Space-x',
   },
   {
-    project: 'Pink Floyd',
-    description: 'Pink Floyd is famous for being an English rock band first formed in London in 1965.',
-    languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
-    image: 'beatles.jpg',
-    link: 'http://www.pinkfloyd.com',
-    source: 'https://github.com/diegoh40',
+    project: 'Countries Details',
+    description: 'This JavaScript capstone project is built on the TVMAZE API, an external API. The cards display the movies information that was retrieved from the API. The user has the option to like and comment on the movies cards',
+    languages: ['HTML', 'CSS', 'react', 'redux'],
+    image: 'proj3.png',
+    link: 'https://diegoh40-makes-great-sites.netlify.app/',
+    source: 'https://github.com/diegoh40/countries-webapp',
   },
+  
   {
-    project: 'Led Zeppelin',
-    description: 'Led Zeppelin were an English rock band formed in London in 1968. The group consisted of vocalist Robert Plant, guitarist Jimmy Page.',
-    languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
-    image: 'beatles.jpg',
-    link: 'http://www.ledzeppelin.com',
-    source: 'https://github.com/diegoh40',
-  },
-  {
-    project: 'The Who',
+    project: 'Movies App',
     description: 'The Who are an English rock band formed in London in 1964. Their classic lineup consisted of lead singer Roger Daltrey, guitarist and singer Pete Townshend.',
-    languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
-    image: 'beatles.jpg',
-    link: 'http://www.thewho.com',
-    source: 'https://github.com/diegoh40',
+    languages: ['HTML', 'CSS', 'react', 'redux'],
+    image: 'proj4.png',
+    link: 'https://creative-snickerdoodle-94ec3b.netlify.app/',
+    source: 'https://github.com/diegoh40/capestone-II',
   },
   {
-    project: 'U2',
-    description: 'U2, Irish postpunk band that by the end of the 1980s had established itself not only as one of the most popular music bands.',
-    languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
-    image: 'beatles.jpg',
-    link: 'http://www.u2.com',
-    source: 'https://github.com/diegoh40',
+    project: 'Bookstore ',
+    description: 'The Bookstore is a website I created an MVP version that allows you (CRUD) Display a list of books,  add a book, update and remove a selected book.',
+    languages: ['HTML', 'CSS', 'react', 'redux'],
+    image: 'proj5.png',
+    link: 'https://diegoh40.github.io/Awesome-Books-ES6/#',
+    source: 'https://github.com/diegoh40/bookstore',
   },
   {
-    project: 'The Doors',
-    description: 'The Doors, American band that, with a string of hits in the late 1960s and early 70s, was the creative vehicle for singer Jim Morrison.',
-    languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery'],
-    image: 'beatles.jpg',
-    link: 'http://www.thedoors.com/',
-    source: 'https://github.com/diegoh40',
+    project: ' Blue Dream Yatch Booking App',
+    description: 'Blue Dream Yatch Booking Frontend App is an application where the user can register new accounts, login and reserve a set of differents Yatchs. This project has been built using React/Redux that will be connected with Rails in the backend.',
+    languages: ['bootstrap','ruby', 'rails', 'react', 'redux', 'postgresql'],
+    image: 'proj6.png',
+    link: 'https://develop.d394vyctawdkiv.amplifyapp.com/',
+    source: 'https://github.com/diegoh40/blue-dreams-front-end',
   },
 ];
 
 const loadProjects = () => {
   let showProjects = '';
-
-  for (let i = 1; i < works.length; i += 1) {
+  for (let i = 0; i < works.length; i += 1) {
     let listTech = '';
-
     works[i].languages.forEach((elem) => { listTech += `<li>${elem}</li>`; });
-
     showProjects += `<div class="col-12 col-md-4 mb-3">
-      <article>
-        <div class="article-info">
+      <article style="background-image: url(/images2/${works[i].image})">
+        <div class="article-info"  >
           <h4>${works[i].project}</h4>
           <p class="text-white">${works[i].description}</p>
           <ul class="languages m-0 p-0">${listTech}</ul>
         </div>
-
         <div class="article-button">
           <button type="button" class="w-100" data-bs-toggle="modal" data-bs-target="#popupModal" data-bs-whatever="${i}">
             See Project
@@ -106,29 +96,18 @@ const exampleModal = document.getElementById('popupModal');
 
 exampleModal.addEventListener('show.bs.modal', (event) => {
   const button = event.relatedTarget;
+  console.log(button, 'sss');
   const idnum = button.getAttribute('data-bs-whatever');
 
-  /*
-  // Button that triggered the modal
-  var button = event.relatedTarget
-  // Extract info from data-bs-* attributes
-  var recipient = button.getAttribute('data-bs-whatever')
-  // If necessary, you could initiate an AJAX request here
-  // and then do the updating in a callback.
-  //
-  // Update the modal's content.
-
-  var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-  modalTitle.textContent = 'New message to ' + recipient
-  modalBodyInput.value = recipient
-  */
-
   const buttons = `<div class="btn">
-  <div class="row">
-  <button type="button" class="col me-2">See Live <img class="icon" src="images2/flecha.png" alt="GitHub Social" />
-  </button><button class="col me-2" type="button">See Source<img class="icon" src="images2/github.png" alt="GitHub Social" />
-  </button></div>
+  <div class="row">  
+  <a href="${works[idnum].link}" class="col me-2" >
+    <button type="button" class="icon" > See Live  </button>
+  </a>
+  <a href="${works[idnum].source}" class="col me-2">
+    <button type="button" class="icon"alt="GitHub Social" > Source  </button>
+  </a>
+  </div>
   </div>`;
   let listTech = '';
 

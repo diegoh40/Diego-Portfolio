@@ -46,7 +46,7 @@ button:disabled {
   align-items: flex-end;
 
   /* position:relative; */
-  height: 100%;
+  height: 80%;
   width: 100%;
 }
 
@@ -67,10 +67,11 @@ button:hover {
 }
 
 article {
-  background: tomato url(./images2/placeholder0.png) no-repeat;
+/*   background: tomato url(./images2/placeholder0.png) no-repeat;
+ */ 
   background-size: cover;
-  border: 1px solid  black;
-  height: 380px;
+  border: 10px solid  rgb(144, 68, 5);
+  height: 250px;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -601,10 +602,10 @@ h3 {
   transform: translate(50px, 0);
 }
 
-.rotation:hover {
+/* .rotation:hover {
   transform: rotate(45deg);
   transform-origin: 20% 40%;
-}
+} */
 
 .social2 {
   display: flex;
