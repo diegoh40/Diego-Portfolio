@@ -66,11 +66,9 @@ button:hover {
   cursor: pointer;
 }
 
-article {
-/*   background: tomato url(./images2/placeholder0.png) no-repeat;
- */ 
+article { 
   background-size: cover;
-  border: 10px solid  rgb(144, 68, 5);
+  border: 0px solid  rgb(159, 159, 159);
   height: 250px;
   margin: 0;
   padding: 0;
