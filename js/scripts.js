@@ -44,7 +44,7 @@ const works = [
   
   {
     project: 'Movies App',
-    description: 'The Who are an English rock band formed in London in 1964. Their classic lineup consisted of lead singer Roger Daltrey, guitarist and singer Pete Townshend.',
+    description: 'This JavaScript capstone project is built on the TVMAZE API, an external API. The cards display the movies information that was retrieved from the API. The user has the option to like and comment on the movies cards.',
     languages: ['HTML', 'CSS', 'react', 'redux'],
     image: 'proj4.png',
     link: 'https://creative-snickerdoodle-94ec3b.netlify.app/',
