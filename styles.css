@@ -83,10 +83,11 @@ article .article-info {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   height: 100%;
   padding: 12px;
   width: 100%;
+  align-items: center;
 }
 
 article .article-button button {

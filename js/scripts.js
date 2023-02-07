@@ -77,7 +77,7 @@ const loadProjects = () => {
       <article style="background-image: url('images2/${works[i].image}')">
         <div class="article-info"  >
           <h4>${works[i].project}</h4>
-          <p class="text-white">${works[i].description}</p>
+          <!--<p class="text-white">${works[i].description}</p>-->
           <ul class="languages m-0 p-0">${listTech}</ul>
         </div>
         <div class="article-button">
