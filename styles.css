@@ -170,14 +170,15 @@ p {
 }
 
 .languages li {
-  margin: 10px 10px 10px 0;
+  margin: 3px 3px 3px 0;
   border: 0.5px solid #8993a4;
   box-sizing: border-box;
-  padding: 12px 10px;
+  padding: 5px 10px;
   font-family: 'Roboto', sans-serif;
-  background-color: rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.854);
   list-style-type: none;
   text-align: center;
+  font-size: 12px;
 }
 
 .titles2 ul {
@@ -583,7 +584,7 @@ h3 {
 }
 
 #portfolio p {
-  font-size: 18px;
+  font-size: 12px;
   margin: 0 0 0 0;
   color: black;
 }
