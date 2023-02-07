@@ -35,7 +35,7 @@ const works = [
   },
   {
     project: 'Countries Details',
-    description: 'This JavaScript capstone project is built on the TVMAZE API, an external API. The cards display the movies information that was retrieved from the API. The user has the option to like and comment on the movies cards',
+    description: 'This React capstone project is about building a mobile webapp to check a list of metrics (numerical values) that I have created making use of React and Redux. I have selected an API that provides numerical data on a topic that I like and built the webapp around it.',
     languages: ['HTML', 'CSS', 'react', 'redux'],
     image: 'proj3.png',
     link: 'https://diegoh40-makes-great-sites.netlify.app/',
