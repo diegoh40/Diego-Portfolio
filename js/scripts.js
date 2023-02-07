@@ -74,7 +74,7 @@ const loadProjects = () => {
     let listTech = '';
     works[i].languages.forEach((elem) => { listTech += `<li>${elem}</li>`; });
     showProjects += `<div class="col-12 col-md-4 mb-3">
-      <article style="background-image: url(/images2/${works[i].image})">
+      <article style="background-image: url("/images2/${works[i].image})">
         <div class="article-info"  >
           <h4>${works[i].project}</h4>
           <p class="text-white">${works[i].description}</p>
