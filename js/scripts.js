@@ -101,10 +101,10 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
 
   const buttons = `<div class="btn">
   <div class="row">  
-  <a href="${works[idnum].link}" class="col me-2" >
+  <a href="${works[idnum].link}" class="col me-2" target="_blank">
     <button type="button" class="icon" > See Live  </button>
   </a>
-  <a href="${works[idnum].source}" class="col me-2">
+  <a href="${works[idnum].source}" class="col me-2" target="_blank">
     <button type="button" class="icon"alt="GitHub Social" > Source  </button>
   </a>
   </div>
