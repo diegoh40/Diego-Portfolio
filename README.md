@@ -30,13 +30,11 @@ Steps and tools:
 - Twitter: [@Diegoart80](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/diego-hernández-25280a100/)
 
-
 ## 🤝 Contributing
 
 👤**Alfred Boateng**
 - GitHub: [@learnwithalfred](https://github.com/learnwithalfred)
 - GitHub: [@learnwithgonzalo](https://github.com/mgmediaweb)
-
 
 
 Contributions, issues, and feature requests are welcome!
@@ -46,7 +44,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
 
 ## 📝 License
 
