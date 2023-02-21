@@ -105,7 +105,7 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
     <button type="button" class="icon" > See Live  </button>
   </a>
   <a href="${works[idnum].source}" class="col me-2" target="_blank">
-    <button type="button" class="icon"alt="GitHub Social" > Source  </button>
+    <button type="button" class="icon" alt="GitHub Social" > Source  </button>
   </a>
   </div>
   </div>`;
