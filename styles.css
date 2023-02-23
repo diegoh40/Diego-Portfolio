@@ -66,9 +66,9 @@ button:hover {
   cursor: pointer;
 }
 
-article { 
+article {
   background-size: cover;
-  border: 0px solid  rgb(159, 159, 159);
+  border: 0 solid  rgb(159, 159, 159);
   height: 250px;
   margin: 0;
   padding: 0;
@@ -299,7 +299,7 @@ p {
 
   .main-content {
     display: grid;
-    padding: 20px 24px 200px;
+    padding: 100px 24px 200px;
     background-color: #1c1a19;
     background-size: 40%;
     background-image: url('images2/group1.png');
@@ -474,7 +474,7 @@ p {
   }
 
   .main-content {
-    padding: 20px 24px 200px;
+    padding: 100px 24px 200px;
     background-color: #1c1a19;
     background-size: 40%;
     background-image: url('images2/group1.png');
@@ -513,6 +513,8 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 0% 6% 0% 6%;
+  position: fixed;
+  width: 100%;
 }
 
 .blacktitle {
@@ -744,4 +746,10 @@ form hr {
   color: #666;
   background-color: black;
   width: 60%;
+}
+#typewriter { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: rgb(230, 230, 230);
+  padding: 20px;
 }

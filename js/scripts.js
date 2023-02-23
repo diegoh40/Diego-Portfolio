@@ -16,7 +16,7 @@ function menuOpen(opc = false) {
 // popup-window //
 
 const works = [
- 
+
   {
     project: 'Conference Avengers page  Bogotá 2022',
     description: 'In this capstone a page of a conference is presented, using creativity we include our own ideas for the conference to customize the project, we implemented all the concepts seen in the module, HTML, CSS, DOM, JS Objects.',
@@ -41,7 +41,7 @@ const works = [
     link: 'https://diegoh40-makes-great-sites.netlify.app/',
     source: 'https://github.com/diegoh40/countries-webapp',
   },
-  
+
   {
     project: 'Movies App',
     description: 'This JavaScript capstone project is built on the TVMAZE API, an external API. The cards display the movies information that was retrieved from the API. The user has the option to like and comment on the movies cards.',
@@ -61,7 +61,7 @@ const works = [
   {
     project: ' Blue Dream Yatch Booking App',
     description: 'Blue Dream Yatch Booking Frontend App is an application where the user can register new accounts, login and reserve a set of differents Yatchs. This project has been built using React/Redux that will be connected with Rails in the backend.',
-    languages: ['bootstrap','ruby', 'rails', 'react', 'redux', 'postgresql'],
+    languages: ['bootstrap', 'ruby', 'rails', 'react', 'redux', 'postgresql'],
     image: 'proj6.png',
     link: 'https://develop.d394vyctawdkiv.amplifyapp.com/',
     source: 'https://github.com/diegoh40/blue-dreams-front-end',
@@ -136,11 +136,10 @@ form.addEventListener('submit', (event) => {
 
   if (email.value === '') {
     alert.innerHTML = 'Field is empty.';
-  } else if (emailRegex.test(emailVal)) {  
+  } else if (emailRegex.test(emailVal)) {
     alert.innerHTML = ' Use only lowercase in email field.';
   } else {
     form.submit();
-    
   }
 });
 
@@ -164,6 +163,18 @@ form.addEventListener('keyup', () => {
   };
   localStorage.setItem('storeInfo', JSON.stringify(storeInfo));
 }, true);
+
+const text = 'I would like to share some of my best layout work with you, showcasing my ability to design and build high-quality websites. If you need assistance with any of your projects, please do not hesitate to contact me.';
+let i = 0;
+const speed = 50;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById('typewriter').innerHTML += text.charAt(i);
+    i += 1;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter();
 
 menuOpen();// menu header
 menuClose();// menu header
